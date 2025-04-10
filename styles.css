@@ -1,7 +1,81 @@
-html {
-    background-color: #3a3a3a;
-}
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+    color: #333;
+  }
 
-h1 {
-    color: white;
-}
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffffcc;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.7;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  ul li {
+    background: #ecf0f1;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s ease;
+  }
+
+  ul li:hover {
+    background: #d0e6f7;
+  }
+
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    font-style: italic;
+    text-align: center;
+    color: #555;
+  }
+
+  .highlight {
+    color: #2980b9;
+    font-weight: bold;
+  }
